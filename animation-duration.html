@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .box{width: 100px; height: 100px; border: 2px solid #000; position: relative; animation: mm 6s;
+        }
+        .a{animation-timing-function:linear ;}
+        .b{animation-timing-function:ease-in ;} 
+        .c{animation-timing-function: ease-out ;}
+        .d{animation-timing-function:ease-in-out ;}  
+        .e{animation-timing-function:steps(7);}  
+        @keyframes mm{
+            0% {left: 0;} 100%{left: 500px;}
+        }   
+    </style>
+    <body>
+<div class="box a"> A</div>
+<div class="box b">B</div>
+<div class="box c">AB</div>
+<div class="box d">BA</div>
+<div class="box e">ABB</div>
+    </body>
+    
+
+</html>

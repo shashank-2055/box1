@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.box{width: 200px; height: 200px; background: rgb(34, 33, 36); animation-name: shashank; animation-duration:5s ;
+position: absolute; animation-delay: 3s ; animation-fill-mode: forwards;}       
+@keyframes  shashank{
+    0%, from{left:0; top: 0; background: green; }
+    50%{left: 500px; top: 100px;}
+    100%,to{left:700px; top:0}
+} 
+.box1{ width: 100px; height: 100px; background: orange; animation-name:mm; animation-duration:2s; animation-iteration-count:infinite; animation-timing-function: linear;}
+.box:hover{
+    animation-play-state:paused ;
+}
+@keyframes mm{
+    100%{transform: rotate(360deg);}
+}
+    </style>
+</body>
+<div class="box"></div>
+<div class="box1"></div>
+shashank
+</html>
